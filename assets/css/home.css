@@ -58,6 +58,10 @@ body> header,div{
 #checklist > ul{
     list-style-type: none;
 }
+li{
+    /* height: 100px; */
+    box-sizing: border-box;
+}
 
 
 .Section{
@@ -87,7 +91,12 @@ body> header,div{
     padding:20px;
 }
 #S3{
-    width:30%;
+    width:20%;
+}
+
+#S3 p{
+    background-color: rgb(113, 113, 241);
+    text-align: center;
 }
 #deadline{
     font-size: x-small;

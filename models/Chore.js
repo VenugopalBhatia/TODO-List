@@ -8,9 +8,9 @@ const choreSchema = new mongoose.Schema({
     description:{
         type: String
     },
-    // category:{
-    //     type: String
-    // },
+    category:{
+        type: String
+    },
     deadline:{
         type:Date
     }
