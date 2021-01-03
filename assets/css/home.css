@@ -1,0 +1,135 @@
+body> header,div{
+    width: 500px;
+    margin: auto;
+    background-color: beige;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#Heading{
+    text-align: center;
+    background-color:rgb(218, 208, 255);
+}
+
+#descInput{
+    position: relative;
+    width:90%;
+    margin: auto;
+}
+#description{
+    position: relative;
+    width: 99%;
+    height: 50px;
+    background-color: beige;
+    border: none;
+}
+
+::placeholder{
+    position: relative;
+    margin: auto;
+    opacity: 0.5;
+}
+
+
+#userInp{
+    min-width: 500px;
+    min-height:150px;
+}
+
+#graphicalInput{
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    width:400px;
+    height:70px;
+    /* padding:15px; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#graphicalInput>*{
+
+    margin: auto;
+    height:50%;
+    width:40%;
+
+    
+}
+#checklist > ul{
+    list-style-type: none;
+}
+
+
+.Section{
+    display: inline-block;
+
+}
+#S1{
+    box-sizing: border-box;
+    width: 10%;
+    height:100%;
+}
+#checkbox>input{
+    box-sizing: border-box;
+    width: 40px;
+    height:40px;
+}
+#S2{
+    width: 60%;
+    text-align: center;
+   
+}
+#S2 p{
+    text-align: center;
+}
+#description{
+    box-sizing: border-box;
+    padding:20px;
+}
+#S3{
+    width:30%;
+}
+#deadline{
+    font-size: x-small;
+    background-color: beige;
+    color: rgb(107, 106, 106);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#category{
+    border: none;
+    background-color: beige;
+}
+
+#deadline{
+    border: none;
+}
+
+#actionButtons {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 7px;
+    text-align: center;
+    width: 200px;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#addTask {
+    position: relative;
+    border:none;
+    width: 45%;
+    height: 50%;
+    background-color: rgb(52, 158, 135);
+    color: beige;
+}
+
+#deleteTask{
+    border: none;
+    width: 45%;
+    height:50%;
+    background-color: rgb(216, 86, 54);
+    color: beige;
+}

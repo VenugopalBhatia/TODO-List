@@ -1,7 +1,15 @@
 const TaskList = require('../models/Chore');
 
 module.exports.home = function(req,res){
-    res.render('home',{'title':"TODO App"});
+    TaskList.find({},function(err,checklist){
+        if(err){
+            console.log('Error retrieving tasks from db');
+            return;
+        }
+
+        return res.render('home',{'title':"TODO App","checklist":checklist});;
+    })
+    
 }
 
 module.exports.addTask = function(req,res){

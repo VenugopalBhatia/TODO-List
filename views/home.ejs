@@ -2,23 +2,33 @@
 <html>
     <head>
         <title><%=title%></title>
+        <link rel="stylesheet" href="./css/home.css">
     </head>
     <body>
         <!-- create sections for reminders, to do checklists and sticky notes -->
-        <header></header>
+        <header>
+            <h2 id = "Heading"> TODO APP </h2>
+        </header>
         <div id = "userInp">
             <form action="/add-task" method = "POST">
                 <div id = "descInput">
-                    <input type="text" name="description" id="description">
+                   
+                    <input type="text" name="description" id="description" placeholder = "Description">
                 </div>
                 
                 <div id = "graphicalInput">
-                    <select name="category" id="category"></select>
+                    <select name="category" id="category">
+                        <option value="Home">Home</option>
+                        <option value="Work">Work</option>
+                        <option value="Personal">Personal</option>
+                        <option value="School">School</option>
+                        <option value="Other">Other</option>
+                    </select>
                     <input type="date" name ="deadline" id = "deadline">
                 </div>
 
                 <div id = "actionButtons">
-                    <input type = "submit" id = "addTask">
+                    <input type = "submit" id = "addTask" value = "ADD">
                     <button id= "deleteTask"> DELETE </button>
                 </div>
                 
@@ -27,11 +37,24 @@
             </form>
         </div>
         <div id = "checklist">
-            <!-- <ul>
-                // < for(let i of checklist) {>
-                    <li></li>
-                // < } >
-            </ul> -->
+            <ul>
+                <% for(let i of checklist) { %>
+                    <li>
+                        <div id = "S1" class = "Section">
+                            <p id = "checkbox"> <input type = "checkbox" id = "taskStatus" name = "taskStatus">
+                            </p>
+                        </div>
+                        <div id = "S2" class = "Section">
+                            <p id = "description"><%= i.description %></p>
+                            <p id = "deadline"><%= i.deadline.toDateString() %></p>
+                        </div>
+                        <div id = "S3" class = "Section">
+                            <p id = "category"><%= i.category %></p>
+                        </div>
+                        
+                    </li>
+                <% } %>
+            </ul>
             
 
         </div>
