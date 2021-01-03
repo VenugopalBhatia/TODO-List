@@ -5,9 +5,10 @@ body> header,div{
     font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#Heading{
+header{
     text-align: center;
-    background-color:rgb(218, 208, 255);
+    background-image: linear-gradient(to bottom right, rgb(253, 153, 4), rgb(180, 6, 6));
+    color: white;
 }
 
 #descInput{
