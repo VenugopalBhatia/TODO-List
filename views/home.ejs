@@ -7,14 +7,14 @@
         <!-- create sections for reminders, to do checklists and sticky notes -->
         <header></header>
         <div id = "userInp">
-            <form action="POST">
+            <form action="/add-task" method = "POST">
                 <div id = "descInput">
-                    <input type="text" name="Description" id="description">
+                    <input type="text" name="description" id="description">
                 </div>
                 
                 <div id = "graphicalInput">
-                    <select name="Category" id="category"></select>
-                    <input type="date" name ="Deadline" id = "deadline">
+                    <select name="category" id="category"></select>
+                    <input type="date" name ="deadline" id = "deadline">
                 </div>
 
                 <div id = "actionButtons">
@@ -27,6 +27,12 @@
             </form>
         </div>
         <div id = "checklist">
+            <!-- <ul>
+                // < for(let i of checklist) {>
+                    <li></li>
+                // < } >
+            </ul> -->
+            
 
         </div>
         
