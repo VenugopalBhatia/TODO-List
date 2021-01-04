@@ -16,3 +16,25 @@ var taskStatus = function(){
 }
 
 $('#checkbox input[type=checkbox').on('click',taskStatus);
+
+$('#deleteTask').on('click',function(){
+    console.log("Delete button clicked");
+    for(let i in checkedTasks){
+        
+        $.ajax({
+            async:false,
+            url:"/delete-task",
+            type:"get",
+            data:{
+                id:i
+            },
+            success:function(){
+                console.log("Delete request sent");
+            }
+            
+
+        })
+    }
+    return;
+   
+})

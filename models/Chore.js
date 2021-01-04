@@ -6,7 +6,8 @@ const choreSchema = new mongoose.Schema({
     // },
 
     description:{
-        type: String
+        type: String,
+        required:true
     },
     category:{
         type: String

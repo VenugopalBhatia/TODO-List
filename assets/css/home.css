@@ -7,8 +7,8 @@ body> header,div{
 
 header{
     text-align: center;
-    background-image: linear-gradient(to bottom right, rgb(253, 153, 4), rgb(180, 6, 6));
-    color: white;
+    background-image: linear-gradient(to bottom right, rgb(247, 245, 242), rgb(221, 217, 217));
+    
 }
 
 #descInput{

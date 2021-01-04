@@ -7,7 +7,7 @@ module.exports.home = function(req,res){
             return;
         }
 
-        return res.render('home',{'title':"TODO App","checklist":checklist});;
+        return res.render('home',{'title':"TODO App","checklist":checklist});
     })
     
 }
@@ -25,6 +25,22 @@ module.exports.addTask = function(req,res){
     })
 }
 
-// module.exports.deleteTask = function(req,res){
+module.exports.deleteTask = function(req,res){
     
-// }
+    let id = req.query.id;
+    console.log("delete request: ",id);
+
+    
+    TaskList.findByIdAndDelete(id,function(err){
+        if(err){
+            console.log(`Error in deleting task with id: ${id}`);
+            return;
+        }
+        console.log(`Deleted task with id: ${id}`);
+        res.setHeader("Content-Type", "text/html")
+        return res.redirect('/');
+    })
+    
+    
+    
+}
