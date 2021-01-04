@@ -1,4 +1,5 @@
 const TaskList = require('../models/Chore');
+const router = require('../routes');
 
 module.exports.home = function(req,res){
     TaskList.find({},function(err,checklist){
@@ -37,7 +38,7 @@ module.exports.deleteTask = function(req,res){
             return;
         }
         console.log(`Deleted task with id: ${id}`);
-        res.setHeader("Content-Type", "text/html")
+        res.setHeader("Content-Type", "text/html");
         return res.redirect('/');
     })
     

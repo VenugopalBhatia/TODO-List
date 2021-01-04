@@ -30,9 +30,12 @@ $('#deleteTask').on('click',function(){
             },
             success:function(){
                 console.log("Delete request sent");
+                
             }
             
 
+        }).done(function(){
+            window.location.href = '/';
         })
     }
     return;
