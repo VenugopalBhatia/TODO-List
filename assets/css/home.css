@@ -115,7 +115,7 @@ li{
     border: none;
 }
 
-#actionButtons {
+#actionButtons{
     box-sizing: border-box;
     margin: auto;
     padding: 7px;
@@ -126,6 +126,7 @@ li{
     justify-content: space-between;
 
 }
+
 
 #addTask {
     position: relative;
